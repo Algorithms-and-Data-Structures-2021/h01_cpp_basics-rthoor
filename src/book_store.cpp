@@ -45,8 +45,8 @@ BookStore::BookStore(const std::string &name) : name_{name} {
 BookStore::~BookStore() {
   // здесь мог бы быть ваш высвобождающий разум от негатива код ...
   // Tip 1: я свободен ..., словно память в куче: не забудьте обнулить указатель
-    //delete[] storage_ ;
-    delete storage_;
+    delete[] storage_ ;
+    //delete storage_;
     storage_capacity_= 0;
     storage_ = nullptr;
 }
